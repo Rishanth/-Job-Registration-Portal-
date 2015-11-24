@@ -1,0 +1,20 @@
+package com.virtusa.vrps.dao;
+
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public class JobSeekerDao implements IJobSeekerDao {
+
+	private HibernateTemplate hibernateTemplate;
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public void SaveOrUpdate(JobSeeker jobSeeker) {
+		// TODO Auto-generated method stub
+	
+		
+	}
+
+	
+}

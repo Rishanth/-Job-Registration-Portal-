@@ -1,0 +1,292 @@
+!SESSION 2013-10-17 09:31:30.737 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file /home/test/VRPS_Registration/.metadata/.bak_0.log
+Created Time: 2013-10-17 09:42:25.429
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.429
+!MESSAGE NLS unused message: ResolveDialog.propertyConflictMultiple in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.430
+!MESSAGE NLS unused message: ResolveDialog.treeConflict in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.431
+!MESSAGE NLS unused message: ResolveDialog.treeConflictMultiple in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.433
+!MESSAGE NLS unused message: ResolveDialog.nonPropertyOnly in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.434
+!MESSAGE NLS unused message: ResolveDialog.nonTreeOnly in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.435
+!MESSAGE NLS unused message: RevertAction.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.436
+!MESSAGE NLS unused message: RevertAction.1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.438
+!MESSAGE NLS unused message: RevertAction.error in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.439
+!MESSAGE NLS unused message: RevertOperation.taskName in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.440
+!MESSAGE NLS unused message: RevertOperation.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.441
+!MESSAGE NLS unused message: AnnotateOperation.taskName in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.442
+!MESSAGE NLS unused message: AnnotateOperation.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.444
+!MESSAGE NLS unused message: AnnotateOperation_QDAnnotateTitle in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.445
+!MESSAGE NLS unused message: AnnotateOperation_QDAnnotateMessage in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.446
+!MESSAGE NLS unused message: AnnotateOperation_4 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.447
+!MESSAGE NLS unused message: SVNOperation.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.448
+!MESSAGE NLS unused message: SVNOperation.operationCancelled in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.449
+!MESSAGE NLS unused message: SVNConflicts in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.451
+!MESSAGE NLS unused message: SVNHistoryPage.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.452
+!MESSAGE NLS unused message: SVNHistoryPage.11 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.453
+!MESSAGE NLS unused message: SVNHistoryPage.12 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.454
+!MESSAGE NLS unused message: SVNHistoryPage.7 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.456
+!MESSAGE NLS unused message: SVNHistoryPage.8 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.457
+!MESSAGE NLS unused message: AcceptMine.label in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.458
+!MESSAGE NLS unused message: AcceptTheirs.label in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.459
+!MESSAGE NLS unused message: MarkResolved.label in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.460
+!MESSAGE NLS unused message: EditConflicts.Label in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.462
+!MESSAGE NLS unused message: SSHPromptDialog.title in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.463
+!MESSAGE NLS unused message: SSHPromptDialog.authentication in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.464
+!MESSAGE NLS unused message: SSHPromptDialog.passwordauth in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.465
+!MESSAGE NLS unused message: SSHPromptDialog.keyauth in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.466
+!MESSAGE NLS unused message: SSHPromptDialog.keyfile in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.468
+!MESSAGE NLS unused message: SSHPromptDialog.browse in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.469
+!MESSAGE NLS unused message: SSHPromptDialog.passphrase in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.470
+!MESSAGE NLS unused message: SSHPromptDialog.port in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.471
+!MESSAGE NLS unused message: SSHPromptDialog.save in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.473
+!MESSAGE NLS unused message: SSHPromptDialog.invalidPortTitle in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.474
+!MESSAGE NLS unused message: SSHPromptDialog.invalidPortMessage in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.475
+!MESSAGE NLS unused message: SSLClientCertificate.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.476
+!MESSAGE NLS unused message: SSLClientCertificate.1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.478
+!MESSAGE NLS unused message: SSLClientCertificate.2 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.479
+!MESSAGE NLS unused message: SSLClientCertificatesMSCapi.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.480
+!MESSAGE NLS unused message: SSLClientCertificatesMSCapi.1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.482
+!MESSAGE NLS unused message: SSLPromptDialog.title in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.483
+!MESSAGE NLS unused message: SSLPromptDialog.certificate in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.484
+!MESSAGE NLS unused message: GlobalRefreshSubscriberPage.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.486
+!MESSAGE NLS unused message: RemoteAnnotationStorage.1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.487
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.2 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.488
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.3 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.489
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.4 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.491
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.5 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.492
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.6 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.493
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.7 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.494
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.8 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.495
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.9 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.497
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.10 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.498
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.11 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.499
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.12 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.501
+!MESSAGE NLS unused message: GlobalRefreshResourceSelectionPage.13 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.502
+!MESSAGE NLS unused message: StatisticsPanel.noWorkingSet in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.503
+!MESSAGE NLS unused message: TeamAction.internal in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.504
+!MESSAGE NLS unused message: WorkspacePathValidator.title in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.506
+!MESSAGE NLS unused message: WorkspacePathValidator.eclipsePath in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.507
+!MESSAGE NLS unused message: WorkspacePathValidator.fileSystemPath in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.508
+!MESSAGE NLS unused message: WorkspacePathValidator.instructions in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.509
+!MESSAGE NLS unused message: FetchMembersOperation.taskName in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.510
+!MESSAGE NLS unused message: FetchMembersOperation.message in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.512
+!MESSAGE NLS unused message: RemoteFolderElement_fetchingRemoteMembers.message in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.513
+!MESSAGE NLS unused message: WorkspaceChangeSetCapability_1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.514
+!MESSAGE NLS unused message: WorkspaceChangeSetCapability_2 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.515
+!MESSAGE NLS unused message: WorkspaceChangeSetCapability_3 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.516
+!MESSAGE NLS unused message: WorkspaceChangeSetCapability_7 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.517
+!MESSAGE NLS unused message: WorkspaceChangeSetCapability_8 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.519
+!MESSAGE NLS unused message: OpenChangeSetAction_0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.520
+!MESSAGE NLS unused message: OpenChangeSetAction_1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.521
+!MESSAGE NLS unused message: OpenCommitSetAction_20 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.522
+!MESSAGE NLS unused message: OpenCommitSetAction_21 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.523
+!MESSAGE NLS unused message: OpenRemoteFileAction.0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.524
+!MESSAGE NLS unused message: CVSChangeSetCollector_0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.526
+!MESSAGE NLS unused message: CVSChangeSetCollector_4 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.527
+!MESSAGE NLS unused message: WorkspaceSubscriberContext_0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.528
+!MESSAGE NLS unused message: CommitSetDialog_0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.529
+!MESSAGE NLS unused message: CommitSetDialog_2 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.530
+!MESSAGE NLS unused message: CommitSetDialog_3 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.531
+!MESSAGE NLS unused message: CommitCommentArea_0 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.532
+!MESSAGE NLS unused message: CommitCommentArea_1 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.534
+!MESSAGE NLS unused message: CommitCommentArea_2 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.535
+!MESSAGE NLS unused message: CommitCommentArea_3 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.536
+!MESSAGE NLS unused message: CommitCommentArea_4 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.537
+!MESSAGE NLS unused message: CommitCommentArea_5 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.538
+!MESSAGE NLS unused message: CommitCommentArea_6 in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.539
+!MESSAGE NLS unused message: MenuIconsPreferencePage.restart in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.541
+!MESSAGE NLS unused message: MenuIconsPreferencePage.iconSet in: org.tigris.subversion.subclipse.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-10-17 09:42:25.542
+!MESSAGE NLS unused message: MenuIconsPreferencePage.default in: org.tigris.subversion.subclipse.ui.messages

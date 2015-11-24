@@ -1,0 +1,14 @@
+package com.virtusa.vrps.service;
+
+import com.virtusa.vrps.exception.PropagateException;
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public interface IJobSeekerService {
+
+	public long saveOrUpdate(JobSeeker jobSeeker) throws PropagateException;
+	
+	public long saveOrUpdate(Address address) throws PropagateException;
+	
+
+}

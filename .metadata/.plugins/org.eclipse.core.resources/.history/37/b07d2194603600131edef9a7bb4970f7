@@ -1,0 +1,34 @@
+package com.virtusa.vrps.service;
+
+import com.virtusa.vrps.exception.ForwardException;
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public class JobSeekerService implements IJobSeekerService {
+
+	public void SaveOrUpdate(JobSeeker jobSeeker) throws ForwardException {
+		// TODO Auto-generated method stub
+try
+{
+		com.virtusa.vrps.model.JobSeeker jSeeker=new  com.virtusa.vrps.model. JobSeeker();		
+	jSeeker.setFirstName(jobSeeker.getFirstName());
+	jSeeker.setLastName(jobSeeker.getLastName());
+	jSeeker.setBloodGroup(jobSeeker.getBloodGroup());
+jSeeker.setContactNumber(jobSeeker.getContactNumber());
+jSeeker.setDateOfBirth(com.virtusa.vrps.util.StringUtil.stringtoDate(jobSeeker.getDateofBirth()));
+jSeeker.setContactNumber(jobSeeker.getContactNumber());
+jSeeker.setEmailId(jobSeeker.getEmailId());
+jSeeker.setPassword(jobSeeker.getPassword());
+jSeeker.setImageFilePath(jobSeeker.getImageFilePath());
+jSeeker.setResumeFilePath(jobSeeker.getDateofBirth());
+jSeeker.setSalary(jobSeeker.getSalary());
+jSeeker.setSecurityQuestion(jobSeeker.getSecurityQuestion());
+jSeeker.setSecurityQuestionAnswer(jobSeeker.getSecurityQuestionAnswer());
+jSeeker.setUserName(jobSeeker.getUserName());
+}
+
+
+}
+
+	
+
+}

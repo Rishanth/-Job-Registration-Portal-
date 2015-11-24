@@ -1,0 +1,31 @@
+
+package com.virtusa.vrps.util;
+
+	import java.text.DateFormat;
+	import java.text.ParseException;
+	import java.text.SimpleDateFormat;
+	import java.util.Date;
+
+	public class StringUtil {
+		
+		public static Date stringtoDate(String dateOfBirth) {
+			Date date = null;
+			DateFormat dateFormat = null;
+			if (null != dateOfBirth && !dateOfBirth.isEmpty()) {
+				dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+				try {
+					date = dateFormat.parse(dateOfBirth);
+				} catch (ParseException e) {
+					// TODO: implement logger
+					// logger.log(e.printStackTrace())
+					System.out.println(e);
+				}
+
+			}
+
+			return date;
+
+		}
+
+	}
+

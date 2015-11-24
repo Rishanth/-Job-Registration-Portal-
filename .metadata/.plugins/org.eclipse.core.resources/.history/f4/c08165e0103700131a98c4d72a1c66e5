@@ -1,0 +1,144 @@
+package com.virtusa.vrps.model;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+
+
+@Table
+@Entity(name="VRPS_JOBSEEKER")
+public class JobSeeker {
+   
+    private long jobSeekerId;
+    private String firstName,password,contactNumber,lastName,emailId,securityQuestion,securityQuestionAnswer,bloodGroup,userName;
+    private String resumeFilePath,imageFilePath;   
+    private double salary;
+    private Date dateOfBirth;
+   
+    @Id
+    @GeneratedValue
+    @Column(name="JS_ID")
+    public long getJobSeekerId() {
+        return jobSeekerId;
+    }
+   
+    @Column(name="JS_FNAME")
+    public String getFirstName() {
+        return firstName;
+    }
+   
+    @Column(name="JS_PWD")
+    public String getPassword() {
+        return password;
+    }
+   
+    @Column(name="JS_MOBNUM")
+    public String getContactNumber() {
+        return contactNumber;
+    }
+   
+    @Column(name="JS_LNAME")
+    public String getLastName() {
+        return lastName;
+    }
+   
+    @Column(name="JS_EMAILID")
+    public String getEmailId() {
+        return emailId;
+    }
+   
+    @Column(name="JS_QUESTION")
+    public String getSecurityQuestion() {
+        return securityQuestion;
+    }
+   
+   
+    @Column(name="JS_ANSWER")
+    public String getSecurityQuestionAnswer() {
+        return securityQuestionAnswer;
+    }
+   
+    @Column(name="JS_BLOODGROUP")
+    public String getBloodGroup() {
+        return bloodGroup;
+    }
+   
+    @Column(name="JS_USERNAME")
+    public String getUserName() {
+        return userName;
+    }
+   
+    @Column(name="JS_RESUMEFILEPATH")
+    public String getResumeFilePath() {
+        return resumeFilePath;
+    }
+   
+    @Column(name="JS_IMAGEFILEPATH")
+    public String getImageFilePath() {
+        return imageFilePath;
+    }
+   
+    @Column(name="JS_SALARY")
+    public double getSalary() {
+        return salary;
+    }
+   
+    @Column(name="JS_DOB")
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+    public void setJobSeekerId(long jobSeekerId) {
+        this.jobSeekerId = jobSeekerId;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+    public void setSecurityQuestion(String securityQuestion) {
+        this.securityQuestion = securityQuestion;
+    }
+    public void setSecurityQuestionAnswer(String securityQuestionAnswer) {
+        this.securityQuestionAnswer = securityQuestionAnswer;
+    }
+    public void setBloodGroup(String bloodGroup) {
+        this.bloodGroup = bloodGroup;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public void setResumeFilePath(String resumeFilePath) {
+        this.resumeFilePath = resumeFilePath;
+    }
+    public void setImageFilePath(String imageFilePath) {
+        this.imageFilePath = imageFilePath;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+   
+   
+   
+   
+   
+
+}

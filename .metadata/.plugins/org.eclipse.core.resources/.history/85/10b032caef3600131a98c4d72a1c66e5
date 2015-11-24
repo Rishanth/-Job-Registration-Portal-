@@ -1,0 +1,20 @@
+package com.virtusa.vrps.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.stereotype.Component;
+
+import com.virtusa.vrps.model.JobSeeker;
+@Component
+public class JobSeekerDao implements IJobSeekerDao {
+	@Autowired
+	HibernateTemplate hibernateTemplate;
+	
+	
+	public long saveOrUpdate(JobSeeker jobSeeker){
+	hibernateTemplate.saveOrUpdate(jobSeeker);	
+		return jobSeeker.getJobSeekerId();
+		
+		
+}
+}

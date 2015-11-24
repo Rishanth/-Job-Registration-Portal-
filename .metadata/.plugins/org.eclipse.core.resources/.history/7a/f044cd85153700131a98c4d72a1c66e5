@@ -1,0 +1,61 @@
+
+	
+	package com.virtusa.vrps.model;
+
+
+
+
+	import javax.persistence.Column;
+	import javax.persistence.Entity;
+	import javax.persistence.GeneratedValue;
+	import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+	@Entity
+	@Table
+	public class Skill 
+	{
+		private long skillId;
+		private String skillName;
+		private String version;
+		private String experience;
+		
+				
+		
+		@Id
+		@GeneratedValue
+		public long getSkillId() {
+			return skillId;
+		}
+		public void setSkillId(long skillId) {
+			this.skillId = skillId;
+		}
+		@Column
+		public String getSkillName() {
+			return skillName;
+		}
+		public void setSkillName(String skillName) {
+			this.skillName = skillName;
+		}
+		@Column
+		public String getVersion() {
+			return version;
+		}
+		public void setVersion(String version) {
+			this.version = version;
+		}
+		@Column
+		public String getExperience() {
+			return experience;
+		}
+		public void setExperience(String experience) {
+			this.experience = experience;
+		}
+		
+		
+	}
+
+
+
+

@@ -1,0 +1,92 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<title>Spring 3 MVC Series-Address</title>
+<title>jQuery UI DatePicker - Restrict date range</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+$(function() {
+	$( "#from" ).datepicker({
+	defaultDate: "+1w",
+	changeMonth: true,
+	changeYear: true,
+	numberOfMonths: 1,
+	yearRange:"-25:+0",
+	onClose: function( selectedDate ) {
+	$( "#to" ).datepicker( "option", "minDate", selectedDate );
+	}
+	});
+	$( "#to" ).datepicker({
+	defaultDate: "+1w",
+	changeMonth: true,
+	changeYear: true,
+	numberOfMonths: 1,
+	yearRange:"-25:+0",
+	onClose: function( selectedDate ) {
+	$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+	}
+	});
+	});
+</script>
+
+
+</head>
+<body>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
+
+<form:form action="addJobSeeker.do" commandName="jobSeeker">
+<table>
+<tr>
+
+<td>
+ firstname<form:input path="firstName"/><br/>
+ lastname<form:input path="lastName"/><br/>
+ username<form:input path="userName"/><br/>
+ password<form:input path="password"/><br/>
+ emailId<form:input path="emailId"/><br/>
+ dateofBirth<form:input path="dateofBirth" id="datepicker"/><br/>
+ salary<form:input path="salary"/><br/>
+ <td>Select question:</td><td><form:select path="securityQuestion"><form:errors path="securityQuestion"/><br/>
+  <form:option value="What is your first pet's name?">What is your first pet's name?</form:option><br/>
+      <form:option value="What is your first teacher's name?">What is your first teacher's name?</form:option><br/>
+      <form:option value="What is your first friend's name?">What is your first friend's name?</form:option><br/>
+                   
+    </form:select>
+        </td>
+    </tr>
+   
+    <tr>
+   
+        <td>Enter answer:</td><td><form:input path="securityQuestionAnswer" /></td><td><form:errors path="securityQuestionAnswer"/></td>
+    </tr>
+   
+    <tr>
+        <td><form:label path="bloodGroup">BloodGroup</form:label></td>
+        <td><form:select path="bloodGroup">
+            <form:option value="A+ve">A+ve</form:option>
+            <form:option value="A-ve">A-ve</form:option>
+            <form:option value="B+ve">B+ve</form:option>
+            <form:option value="B-ve">B-ve</form:option>
+            <form:option value="AB+ve">AB+ve</form:option>
+            <form:option value="AB-ve">AB-ve</form:option>
+            <form:option value="O+ve">O+ve</form:option>
+            <form:option value="O-ve">O-ve</form:option>
+           
+        </form:select>
+        </td>
+    </tr>
+
+</table>
+<input type="submit" value="NEXT"/>
+</form:form>
+</body>
+</html>

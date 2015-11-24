@@ -1,0 +1,19 @@
+package com.virtusa.vrps.service;
+
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public class JobSeekerService implements IJobSeekerService {
+
+	public void SaveOrUpdate(JobSeeker jobSeeker) {
+		// TODO Auto-generated method stub
+		com.virtusa.vrps.model.JobSeeker jSeeker=new  com.virtusa.vrps.model. JobSeeker();		
+	jSeeker.setFirstName(jobSeeker.getFirstName());
+	jSeeker.setLastName(jobSeeker.getLastName());
+	jSeeker.setBloodGroup(jobSeeker.getBloodGroup());
+jSeeker.setContactNumber(jobSeeker.getContactNumber());
+jSeeker.setDateOfBirth(com.virtusa.vrps.util.StringUtil.stringtoDate(jobSeeker.getDateofBirth()));
+}
+
+	
+
+}

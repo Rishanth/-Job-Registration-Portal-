@@ -1,0 +1,16 @@
+package com.virtusa.vrps.exception;
+
+public class ForwardException  extends Exception{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ForwardException()
+	{
+		System.out.println("your's is wrong");
+	}
+	
+
+}

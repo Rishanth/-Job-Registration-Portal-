@@ -1,0 +1,11 @@
+package com.virtusa.vrps.exception;
+
+public class ForwardException  extends Exception{
+
+	public ForwardException()
+	{
+		System.out.println("your's is wrong");
+	}
+	
+
+}

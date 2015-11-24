@@ -1,0 +1,69 @@
+package com.virtusa.vrps.pojo;
+
+public class Address {
+	
+	private String doorNo,city,state,street,zipCode;
+	private long addressId;
+
+	private long jobSeekerId;
+	
+	
+	public long getJobSeekerId() {
+		return jobSeekerId;
+	}
+
+	public void setJobSeekerId(long jobSeekerId) {
+		this.jobSeekerId = jobSeekerId;
+	}
+
+	public long getAddressId() {
+		return addressId;
+	}
+
+	public void setAddressId(long addressId) {
+		this.addressId = addressId;
+	}
+
+	public String getDoorNo() {
+		return doorNo;
+	}
+
+	public void setDoorNo(String doorNo) {
+		this.doorNo = doorNo;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getZipCode() {
+		return zipCode;
+	}
+
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+	
+	
+
+}

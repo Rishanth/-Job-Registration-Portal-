@@ -1,0 +1,19 @@
+package com.virtusa.vrps.exception;
+
+public class PropagateException extends Exception {
+	
+	private String message;
+
+	   public PropagateException(String message) 
+	   {
+            this.message = message;
+	        
+	   }
+
+	@Override
+	public String toString() {
+		
+		return message;
+	}
+
+}

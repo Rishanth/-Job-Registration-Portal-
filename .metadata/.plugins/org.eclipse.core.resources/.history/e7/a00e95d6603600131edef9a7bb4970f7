@@ -1,0 +1,8 @@
+package com.virtusa.vrps.service;
+
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public interface IJobSeekerService {
+
+	public void SaveOrUpdate(JobSeeker jobSeeker);
+}

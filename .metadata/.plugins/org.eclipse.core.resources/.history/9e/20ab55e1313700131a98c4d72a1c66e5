@@ -1,0 +1,87 @@
+package com.virtusa.vrps.service;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.virtusa.vrps.dao.IJobSeekerDao;
+import com.virtusa.vrps.exception.PropagateException;
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+import com.virtusa.vrps.pojo.Skill;
+import com.virtusa.vrps.util.Utility;
+
+@Service
+public class JobSeekerService implements IJobSeekerService
+{
+	@Autowired
+	IJobSeekerDao iJobSeekerDao;
+
+	public long saveOrUpdate(JobSeeker jobSeeker) throws PropagateException
+	{
+		com.virtusa.vrps.model.JobSeeker jobSeekermodel=new com.virtusa.vrps.model.JobSeeker();
+
+		jobSeekermodel.setFirstName(jobSeeker.getFirstName());
+		jobSeekermodel.setLastName(jobSeeker.getLastName());
+		jobSeekermodel.setUserName(jobSeeker.getUserName());
+		jobSeekermodel.setBloodGroup(jobSeeker.getBloodGroup());
+		jobSeekermodel.setDateOfBirth(Utility.StringToDate(jobSeeker.getDateOfBirth()));
+		jobSeekermodel.setContactNumber(jobSeeker.getContactNumber());
+		jobSeekermodel.setEmailId(jobSeeker.getEmailId());
+		jobSeekermodel.setPassword(jobSeeker.getPassword());
+		jobSeekermodel.setSalary(jobSeeker.getSalary());
+		jobSeekermodel.setSecurityQuestion(jobSeeker.getSecurityQuestion());
+		jobSeekermodel.setSecurityQuestionAnswer(jobSeeker.getSecurityQuestionAnswer());
+		jobSeekermodel.setImageFilePath(Utility.saveImage(jobSeeker.getImageContent(),jobSeeker.getUserName()));
+		jobSeekermodel.setResumeFilePath(Utility.saveResume(jobSeeker.getResumeContent(),jobSeeker.getUserName()));
+		
+		return iJobSeekerDao.saveOrUpdate(jobSeekermodel);
+		
+	}
+
+	public long saveOrUpdate(Address address) 
+	{
+		com.virtusa.vrps.model.JobSeeker jobSeekerModel=iJobSeekerDao.get(address.getJobSeekerId());
+
+		com.virtusa.vrps.model.Address addressModel=new com.virtusa.vrps.model.Address();
+		addressModel.setState(address.getState());
+		addressModel.setStreet(address.getStreet());
+		addressModel.setZipcode(address.getZipcode());
+		addressModel.setCity(address.getCity());
+		addressModel.setDoorNumber(address.getDoorNumber());
+		
+		Set<com.virtusa.vrps.model.Address> addressSet=new HashSet<com.virtusa.vrps.model.Address>();
+		addressSet.add(addressModel);
+		
+		jobSeekerModel.setAddressSet(addressSet);
+		return iJobSeekerDao.saveOrUpdate(jobSeekerModel);
+			
+	}
+
+	public long saveOrUpdate(Skill skill) {
+		// TODO Auto-generated method stub
+		com.virtusa.vrps.model.JobSeeker jobSeekerSkill=iJobSeekerDao.get(skill.getJobSeekerId());
+		
+		com.virtusa.vrps.model.Skill skillModel=new com.virtusa.vrps.model.Skill();
+		skillModel.setExperience(skill.getExperience());
+		skillModel.setSkillName(skill.getSkillName());
+		skillModel.setVersion(skill.getVersion());
+		Set<com.virtusa.vrps.model.Skill>skillSet=new HashSet<com.virtusa.vrps.model.Skill>();
+		skillSet.add(skillModel);
+		jobSeekerSkill.setSkill(skillSet);
+		return iJobSeekerDao.saveOrUpdate(jobSeekerSkill);
+	}
+	}
+
+	/*public void saveToSkill(Skill skill) 
+	{
+		com.virtusa.vrps.model.Skill skillModel=new com.virtusa.vrps.model.Skill();
+		skillModel.setSkillName(skill.getSkillName());
+		skillModel.setExperience(skill.getExperience());
+		skillModel.setVersion(skill.getVersion());
+		
+		iJobSeekerDao.saveToSkill(skillModel);
+	}
+*/

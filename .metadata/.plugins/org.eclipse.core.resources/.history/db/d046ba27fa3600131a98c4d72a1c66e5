@@ -1,0 +1,85 @@
+package com.virtusa.vrps.controller;
+
+
+
+	import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+	import org.springframework.validation.BindingResult;
+	import org.springframework.web.bind.annotation.ModelAttribute;
+	import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+	import org.springframework.web.servlet.ModelAndView;
+
+import com.virtusa.vrps.exception.PropagateException;
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+import com.virtusa.vrps.service.IJobSeekerService;
+
+
+	@Controller
+	public class JobSeekerController {		
+		
+		
+		@Autowired
+		IJobSeekerService iJobSeekerService;
+		
+		@RequestMapping(value="/jobSeekerRegistration")
+		public ModelAndView displayJobSeekerRegistrationForm()
+		{
+			return new ModelAndView("jobSeekerForm","jobSeeker",new JobSeeker());
+		}
+
+		
+				
+			@RequestMapping(value="/addJobSeeker",method=RequestMethod.POST)
+			public ModelAndView addJobSeeker(@ModelAttribute("jobSeeker") JobSeeker jobSeeker,BindingResult result)
+			{
+				System.out.println(jobSeeker.getFirstName());
+				System.out.println(jobSeeker.getLastName());
+				System.out.println(jobSeeker.getEmailId());
+				System.out.println(jobSeeker.getJobSeekerId());
+				System.out.println(jobSeeker.getDateOfBirth());
+                System.out.println(jobSeeker.getBloodGroup());	
+                System.out.println(jobSeeker.getSalary());
+                System.out.println(jobSeeker.getSecurityQuestion());
+                System.out.println(jobSeeker.getSecurityQuestionAnswer());
+                System.out.println(jobSeeker.getImageFile());
+                System.out.println(jobSeeker.getResumeFile());
+
+				
+				
+				try {
+					System.out.println("hjg");
+					Address address= new Address();	
+					System.out.println("gyu");
+					address.setJobSeekerId(iJobSeekerService.saveOrUpdate(jobSeeker));
+					System.out.println("uihu");
+					return new  ModelAndView("address","address",address);
+				} catch (PropagateException e) {
+					return null;
+				}
+				
+				
+				
+				
+				
+			}
+		
+			@RequestMapping(value="/addAddress",method=RequestMethod.POST)
+			public ModelAndView addaddress(@ModelAttribute("address") Address address,BindingResult result)
+			{
+				System.out.println(address.getCity());
+				System.out.println(address.getDoorNo());
+				System.out.println(address.getState());
+				System.out.println(address.getStreet());
+				System.out.println(address.getZipCode());
+				
+				System.out.println("risdsd");
+				Address address= new Address();	
+				System.out.println("gyu");
+				address.setJobSeekerId(iJobSeekerService.saveOrUpdate(jobSeeker));
+				System.out.println("uihu");
+				return new  ModelAndView("address","address",address);
+			}
+			
+	}

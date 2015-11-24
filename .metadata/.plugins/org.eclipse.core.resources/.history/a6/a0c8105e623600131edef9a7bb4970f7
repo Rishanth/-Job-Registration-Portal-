@@ -1,0 +1,15 @@
+package com.virtusa.vrps.dao;
+
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public class JobSeekerDao implements IJobSeekerDao {
+
+	private HibernateTemplate hibernateTemplate;
+	public void SaveOrUpdate(JobSeeker jobSeeker) {
+		// TODO Auto-generated method stub
+	
+		
+	}
+
+	
+}

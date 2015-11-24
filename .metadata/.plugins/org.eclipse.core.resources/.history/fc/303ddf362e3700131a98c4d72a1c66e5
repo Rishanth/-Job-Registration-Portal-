@@ -1,0 +1,99 @@
+package com.virtusa.vrps.pojo;
+
+
+
+public class Qualification {
+	
+	
+	private int qualificationId;
+	
+	@NotBlank
+	private String degreeName;
+	
+	@NotBlank
+	private String university;
+	
+	@NotBlank
+	private String collegeName;
+	
+	@NotBlank
+	private String fromDate;
+	
+	@NotBlank
+	private String toDate;
+	
+	@NotNull
+	private double aggregate;
+	
+	private long jobSeekerId;
+	
+	
+	public int getQualificationId() {
+		return qualificationId;
+	}
+	public void setQualificationId(int qualificationId) {
+		this.qualificationId = qualificationId;
+	}
+	
+	public String getDegreeName() {
+		return degreeName;
+	}
+	
+	public void setDegreeName(String degreeName) {
+		this.degreeName = degreeName;
+	}
+	
+		
+	public String getUniversity() {
+		return university;
+	}
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+	
+	
+	public String getCollegeName() {
+		return collegeName;
+	}
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+	
+	
+	public String getFromDate() {
+		return fromDate;
+	}
+	public void setFromDate(String fromDate) {
+		this.fromDate = fromDate;
+	}
+	
+	
+	public String getToDate() {
+		return toDate;
+	}
+	public void setToDate(String toDate) {
+		this.toDate = toDate;
+	}
+	
+	
+	public double getAggregate() {
+		return aggregate;
+	}
+	
+	public void setAggregate(double aggregate) {
+		this.aggregate = aggregate;
+	}
+	
+	public long getJobSeekerId() {
+		return jobSeekerId;
+	}
+	
+	public void setJobSeekerId(long jobSeekerId) {
+		this.jobSeekerId = jobSeekerId;
+	}
+	
+	
+	
+	
+
+}

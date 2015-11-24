@@ -1,0 +1,5 @@
+package com.virtusa.vrps.exception;
+
+public class ForwardException  extends Exception{
+
+}

@@ -1,0 +1,73 @@
+package com.virtusa.vrps.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="VRPS_ADDRESS")
+public class Address {
+
+    private long addressId;
+    private String doorNumber,street,city,state,zipCode;
+    private long jobSeekerId;
+   
+    @Column
+    public long getAddressId() {
+        return addressId;
+    }
+    public void setAddressId(long addressId) {
+        this.addressId = addressId;
+    }
+   
+    @Column
+    public String getDoorNumber() {
+        return doorNumber;
+    }
+    public void setDoorNumber(String doorNumber) {
+        this.doorNumber = doorNumber;
+    }
+   
+    @Column
+    public String getStreet() {
+        return street;
+    }
+    public void setStreet(String street) {
+        this.street = street;
+    }
+   
+    @Column
+    public String getCity() {
+        return city;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
+   
+    @Column
+    public String getState() {
+        return state;
+    }
+    public void setState(String state) {
+        this.state = state;
+    }
+   
+    @Column
+    public String getZipCode() {
+        return zipCode;
+    }
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public long getJobSeekerId() {
+        return jobSeekerId;
+    }
+    public void setJobSeekerId(long jobSeekerId) {
+        this.jobSeekerId = jobSeekerId;
+    }
+   
+   
+   
+   
+}

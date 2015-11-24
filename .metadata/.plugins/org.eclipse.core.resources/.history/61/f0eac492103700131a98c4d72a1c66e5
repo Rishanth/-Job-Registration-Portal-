@@ -1,0 +1,11 @@
+package com.virtusa.vrps.dao;
+
+import com.virtusa.vrps.model.Address;
+import com.virtusa.vrps.model.JobSeeker;
+
+public interface IJobSeekerDao {
+	
+	public long saveOrUpdate(JobSeeker jobSeeker);
+	public long saveOrUpdate(Address address);
+
+}

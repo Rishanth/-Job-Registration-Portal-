@@ -1,0 +1,10 @@
+package com.virtusa.vrps.dao;
+
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+
+public interface IJobSeekerDao {
+
+	public void SaveOrUpdate(JobSeeker jobSeeker);
+	public void SaveOrUpdate(Address address);
+}

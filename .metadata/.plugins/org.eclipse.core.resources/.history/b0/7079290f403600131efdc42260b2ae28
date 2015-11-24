@@ -1,0 +1,23 @@
+package com.virtusa.vrps.controller;
+
+public class JobSeekerController {
+
+	
+	@RequestMapping(value="/jobSeekerRegistration")
+	public ModelAndView displayJobSeekerRegistrationForm()
+	{
+		return new ModelAndView("jobSeekerForm","jobSeeker",new JobSeeker());
+	}
+
+	
+			
+		@RequestMapping(value="/addJobSeeker")
+		public void addJobSeeker(@ModelAttribute("jobSeeker") JobSeeker jobSeeker,BindingResult result)
+		{
+			System.out.println(jobSeeker.getFirstName());
+			
+		}
+	
+}
+	
+}

@@ -1,0 +1,55 @@
+package com.virtusa.vrps.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.virtusa.vrps.dao.IJobSeekerDao;
+import com.virtusa.vrps.exception.PropagateException;
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+import com.virtusa.vrps.util.Utility;
+@Service
+public class JobSeekerService implements IJobSeekerService{
+	@Autowired
+	IJobSeekerDao iJobSeekerDao;
+	com.virtusa.vrps.model.JobSeeker modelJobSeeker=new com.virtusa.vrps.model.JobSeeker();
+	com.virtusa.vrps.model.Address modelAddress=new com.virtusa.vrps.model.Address();
+
+public long saveOrUpdate(JobSeeker jobSeeker) throws PropagateException {
+	
+	
+
+	modelJobSeeker.setFirstName(jobSeeker.getFirstName());
+	modelJobSeeker.setLastName(jobSeeker.getLastName());
+	modelJobSeeker.setEmailId(jobSeeker.getEmailId());
+	modelJobSeeker.setBloodGroup(jobSeeker.getBloodGroup());
+	modelJobSeeker.setContactNumber(jobSeeker.getContactNumber());
+	modelJobSeeker.setPassword(jobSeeker.getPassword());
+	modelJobSeeker.setSalary(jobSeeker.getSalary());
+	modelJobSeeker.setSecurityQuestion(jobSeeker.getSecurityQuestion());
+	modelJobSeeker.setSecurityQuestionAnswer(jobSeeker.getSecurityQuestionAnswer());
+	modelJobSeeker.setUserName(jobSeeker.getUserName());
+	modelJobSeeker.setDateOfBirth(Utility.convertStringToDate(jobSeeker.getDateOfBirth()));
+	modelJobSeeker.setImageFilePath(Utility.saveImage(jobSeeker.getImageFile(),jobSeeker.getUserName()));
+	modelJobSeeker.setResumeFilePath(Utility.saveResume(jobSeeker.getResumeFile(), jobSeeker.getUserName()));
+	
+	return iJobSeekerDao.saveOrUpdate(modelJobSeeker);
+		
+	}
+public long saveOrUpdate(Address address) throws PropagateException {
+	// TODO Auto-generated method stub
+	
+	modelAddress.setCity(address.getCity());
+	modelAddress.setDoorNumber(address.getDoorNumber());
+	modelAddress.setState(address.getState());
+	modelAddress.setStreet(address.getStreet());
+	modelAddress.setZipCode(address.getZipCode());
+
+
+
+	
+	return iJobSeekerDao.saveOrUpdate(modelAddress);
+}
+	
+
+}

@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
+<form:form action="addAddress.do" commandName="address" >
+<table>
+
+<tr>
+<td>
+JobSeeker Id 
+</td>
+<td>
+ <form:input path="jobSeekerId" readonly="true"/>
+</td>
+</tr>
+
+<tr>
+<td>Door No</td>
+<td><form:input path="doorNo"/></td>
+</tr>
+
+<tr>
+<td>Street </td>
+<td><form:input path="street"></form:input></td>
+</tr>
+
+<tr>
+<td>City </td>
+<td> <form:input  path="city" /></td>
+</tr>
+
+<tr><td>State </td>
+<td><form:input path="state" /></td>
+</tr>
+
+<tr><td>Zipcode</td>
+<td><form:input path="zipCode"/>
+</td>
+</tr>
+</table>
+
+<tr>
+<td>
+
+<input type="submit" value="ADD">
+
+</td>
+</tr>
+</form:form>
+
+</body>
+</html>

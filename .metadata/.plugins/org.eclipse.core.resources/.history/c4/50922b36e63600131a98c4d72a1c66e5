@@ -1,0 +1,65 @@
+package com.virtusa.vrps.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.virtusa.vrps.dao.IJobSeekerDao;
+import com.virtusa.vrps.exception.ForwardException;
+import com.virtusa.vrps.pojo.Address;
+import com.virtusa.vrps.pojo.JobSeeker;
+import com.virtusa.vrps.util.StringUtil;
+@Service
+public class JobSeekerService implements IJobSeekerService {
+	@Autowired
+	IJobSeekerDao iJobSeekerDao;
+	
+	public void SaveOrUpdate(JobSeeker jobSeeker) throws ForwardException{
+		// TODO Auto-generated method stub
+
+		com.virtusa.vrps.model.JobSeeker jSeeker=new  com.virtusa.vrps.model. JobSeeker();		
+	
+
+	
+
+	jSeeker.setFirstName(jobSeeker.getFirstName());
+	jSeeker.setLastName(jobSeeker.getLastName());
+	jSeeker.setBloodGroup(jobSeeker.getBloodGroup());
+jSeeker.setContactNumber(jobSeeker.getContactNumber());
+	//jSeeker.setDateOfBirth(StringUtil.stringtoDate(jobSeeker.getDateofBirth()));
+	jSeeker.setContactNumber(jobSeeker.getContactNumber());
+	jSeeker.setEmailId(jobSeeker.getEmailId());
+	jSeeker.setPassword(jobSeeker.getPassword());
+	jSeeker.setImageFilePath(jobSeeker.getImageFilePath());
+	jSeeker.setResumeFilePath(jobSeeker.getResumeFilePath());
+	jSeeker.setSalary(jobSeeker.getSalary());
+	jSeeker.setSecurityQuestion(jobSeeker.getSecurityQuestion());
+	jSeeker.setSecurityQuestionAnswer(jobSeeker.getSecurityQuestionAnswer());
+	jSeeker.setUserName(jobSeeker.getUserName());
+jSeeker.setDateOfBirth(StringUtil.stringtoDate(jobSeeker.getDateofBirth()));
+jSeeker.setResumeFilePath(StringUtil.saveResume(jobSeeker.getResumeFile(), jobSeeker.getUserName()));
+jSeeker.setImageFilePath(StringUtil.saveImage(jobSeeker.getImageFile(),jobSeeker.getUserName()));
+	
+
+
+	
+
+
+
+
+}
+
+	public void SaveOrUpdate(Address address) {
+		// TODO Auto-generated method stub
+		
+		
+		com.virtusa.vrps.model.Address Adress=new  com.virtusa.vrps.model.Address();
+		Adress.setCity(address.getCity());
+		Adress.setDoorNo(address.getDoorNo());
+		Adress.setState(address.getState());
+		Adress.setStreet(address.getStreet());
+		Adress.setZipCode(address.getZipCode());
+	}
+
+	
+
+}

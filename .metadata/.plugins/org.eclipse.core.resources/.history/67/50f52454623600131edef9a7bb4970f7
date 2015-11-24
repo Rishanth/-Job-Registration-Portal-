@@ -1,0 +1,5 @@
+package com.virtusa.vrps.dao;
+
+public class JobSeekerDao {
+
+}
